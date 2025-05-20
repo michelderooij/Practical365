@@ -91,10 +91,24 @@ $GL.remove( 'One') | Out-Null
 $GL.add( 3)
 $GL
 
+#Misc
+$sortedList= [System.Collections.SortedList]::new()
+$sortedList.Add('key2', 'value2')
+$sortedList.Add('key1', 'value1')
+$sortedList
 
+$stack= [System.Collections.Stack]::new()
+$stack.push( 'fred')
+$stack.pop()
+$stack
 
+$queue= [System.Collections.Queue]::new()
+$queue.Enqueue( 'Work Item 1')
+$queue.Enqueue( 'Work Item 2')
+$queue.Dequeue()
+$queue
 
-
-
-
+$dictionary= [System.Collections.Generic.Dictionary[string, object]]::new()
+$dictionary.Add('key', 'value')
+$dictionary
 
